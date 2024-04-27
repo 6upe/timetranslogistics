@@ -375,8 +375,7 @@
 
             <div class="col-lg-8 mt-5 mt-lg-0">
               <form
-                action="forms/contact.php"
-                method="post"
+                
                 role="form"
                 class="php-email-form"
                 data-aos="fade-left"
@@ -434,6 +433,37 @@
                 </div>
               </form>
             </div>
+            <script>
+              // Function to get form values and compile message
+              function compileMessage() {
+                // Get form values
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+            
+                // Compile message body
+                var messageBody = "Name: " + name + "\n";
+                messageBody += "Email: " + email + "\n";
+                messageBody += "Subject: " + subject + "\n";
+                messageBody += "Message: " + message;
+            
+                // Compile email subject
+                var emailSubject = "Message from " + name + ": " + subject;
+            
+                // Compile WhatsApp message
+                var whatsappMessage = encodeURIComponent(messageBody);
+            
+                // Open email link
+                var emailLink = "mailto:katongobupe444@gmail.com?subject=" + encodeURIComponent(emailSubject) + "&body=" + encodeURIComponent(messageBody);
+                window.open(emailLink);
+            
+                // Open WhatsApp link
+                var whatsappLink = "https://wa.me/+260962893773?text=" + whatsappMessage;
+                window.open(whatsappLink);
+              }
+            </script>
+            
           </div>
         </div>
       </section>
