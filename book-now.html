@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Time Trans Logistics | Official Website</title>
+    <meta name="description" content="Time-Trans Logistics - Providing secure, dependable, and enjoyable bus transportation services to diverse destinations in Zambia.">
+    <meta name="keywords" content="Time-Trans Logistics, bus transportation, scheduled routes, charter services, comfort, convenience, safety, reliability, customer focus, innovation, community engagement, Zambia">
+
+    <!-- Favicons -->
+    <link href="assets/img/hero-logo.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="assets/img/logo.png" alt="" class="img-fluid"
+          /></a>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto " href="./index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="./index.html">Overview</a></li>
+            <li><a class="nav-link scrollto" href="./index.html">Services</a></li>
+            
+            <li><a class="nav-link scrollto" href="./index.html">Our Values</a></li>          
+            <li><a class="nav-link scrollto" href="./index.html">Contact</a></li>
+            
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+  <main id="main" data-aos="fade-up">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Book Your Journey with Time-Trans</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Booking</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+<div class="col-lg-6">
+            <div class="portfolio-info">
+              <h3></h3>
+              <form id="book-form" action="#" method="post">
+                <h3>Scheduled Routes, Comfort and Convenience</h3>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                  <label for="departure">Pick Up Location:</label>
+                  <input type="text" class="form-control" id="departure" name="departure">
+                </div>
+                <div class="form-group">
+                  <label for="destination">Destined Location:</label>
+                  <input type="text" class="form-control" id="destination" name="destination">
+                </div>
+               
+                <div class="form-group">
+                  <label for="departure_date">Departure Date:</label>
+                  <input type="date" class="form-control" id="departure_date" name="departure_date">
+                </div>
+                <div class="form-group">
+                  <label for="return_date">Return Date (if applicable):</label>
+                  <input type="date" class="form-control" id="return_date" name="return_date">
+                </div>
+                <div class="form-group">
+                  <label for="passengers">Number of Passengers:</label>
+                  <input type="number" class="form-control" id="passengers" name="passengers">
+                </div>
+                <div class="form-group">
+                  <label for="special_requests">Special Requests/Comments:</label>
+                  <textarea class="form-control" id="special_requests" name="special_requests" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-group">
+                  <div class="text-center my-2">
+                    <button  class="primary-btn" style="font-weight: bolder;"  type="submit">Book Now!</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <script>
+              document.getElementById('book-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                compileMessage();
+              });
+
+              // Function to get form values and compile message
+              function compileMessage() {
+                // Get form values
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var departure = document.getElementById("departure").value;
+                var destination = document.getElementById("destination").value;
+                var departureDate = document.getElementById("departure_date").value;
+                var returnDate = document.getElementById("return_date").value;
+                var passengers = document.getElementById("passengers").value;
+                var specialRequests = document.getElementById("special_requests").value;
+            
+                // Compile message body
+                var messageBody = "Booking Details:\n\n";
+                messageBody += "Name: " + name + "\n";
+                messageBody += "Email: " + email + "\n";
+                messageBody += "Phone Number: " + phone + "\n";
+                messageBody += "Departure City: " + departure + "\n";
+                messageBody += "Destination City: " + destination + "\n";
+                messageBody += "Departure Date: " + departureDate + "\n";
+                messageBody += "Return Date: " + returnDate + "\n";
+                messageBody += "Number of Passengers: " + passengers + "\n";
+                messageBody += "Special Requests/Comments: " + specialRequests;
+            
+                // Get current date for dynamic subject
+                var currentDate = new Date();
+                var subjectDate = currentDate.toDateString();
+            
+                // Compile email subject
+                var emailSubject = "Booking Details - " + subjectDate;
+            
+                // Compile WhatsApp message
+                var whatsappMessage = encodeURIComponent(messageBody);
+            
+                // Open email link
+                var emailLink = `mailto:katongobupe@hotmail.com?subject=` + encodeURIComponent(emailSubject) + "&body=" + encodeURIComponent(messageBody);
+                window.open(emailLink);
+            
+                // Open WhatsApp link
+                var whatsappLink = "https://wa.me/+26096289337?text=" + whatsappMessage;
+                window.open(whatsappLink);
+              }
+           </script>
+            
+            
+          </div>
+          <div class="col-lg-6">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/new-images/IMG-20240411-WA0304.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/new-images/IMG-20240411-WA0019.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/new-images/IMG-20240411-WA0308.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <a href="#header" class="scrollto footer-logo"
+                ><img src="assets/img/hero-logo.png" alt=""
+              /></a>
+              <h3>Time Trans Logistics</h3>
+              <p>
+                "To provide safe, efficient, and convenient transportation solutions while prioritising customer satisfaction and fostering community engagement."
+              </p>
+            </div>
+          </div>
+
+          <div class="row footer-newsletter justify-content-center">
+            <div class="col-lg-6">
+              <form action="" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your Email"
+                /><input type="submit" value="Subscribe" />
+              </form>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="www.twitter.com/timetranszm" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="www.facebook.com/timetranszm" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="www.instagram.com/timetranszm" class="instagram"><i class="bx bxl-instagram"></i></a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Time Trans Logistics</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-free-bootstrap-theme/ -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

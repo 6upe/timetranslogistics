@@ -212,7 +212,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #ffffff;
+  color: #000000;
   /* background-color: #000000; */
 }
 
@@ -297,7 +297,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #ffffff;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -312,7 +312,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #ffffff;
+  color: #61B959;
   /* background-color: #000000; */
 }
 
@@ -405,7 +405,7 @@ h6 {
   100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.8), 0 0 70px rgba(255, 255, 255, 0.8), 0 0 80px rgba(255, 255, 255, 0.8); }
 }
 
-#hero .btn-get-started {
+#hero .btn-get-started{
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -575,15 +575,15 @@ section {
   margin-bottom: 0;
 }
 
-.featured .nav-link.active {
+.featured .nav-link .active {
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.08);
 }
 
-.featured .nav-link.active h4 {
+.featured .nav-link .active h4 {
   color: #000000;
 }
 
-.featured .tab-pane.active {
+.featured .tab-pane .active {
   animation: slide-down 0.5s ease-out;
 }
 
@@ -917,6 +917,10 @@ section {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+}
+
+.portfolio-info .form-group{
+  margin-top: 15px;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -1536,6 +1540,19 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
+  background: #61b959;
+}
+
+.primary-btn {
+  background: #000000;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.primary-btn:hover {
   background: #61b959;
 }
 
